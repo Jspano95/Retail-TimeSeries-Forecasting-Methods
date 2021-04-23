@@ -10,7 +10,7 @@
 
 
 ## THE DATA 
-- Roughly 3Y of daily sales data
+- Roughly 3Y of daily sales data (from 2019:2021) 
  - includes items by day, baskets (# transactions), average spend per customers, marked-down sales, promotional sales
 
 ## PROJECT FLOW
