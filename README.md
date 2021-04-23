@@ -28,11 +28,11 @@ Acknowledge the impact of COVID occuring half-way through the sample. Statistica
  ## MODELS
 - Baseline (Naive Forecast) (~ 10% MAPE)
 - Walk-forward SARIMAX Vs. Static SARIMAX (~ 3.56% MAPE)
-- Automate the procedure of optimisting the BIC for selecting the length of the (AR, MA, SAR, SMA) terms in the SARIMAX model; whereby, X = holiday_dummy variable
- - Note: the walk-forward procedure only beat the static SARIMAX procedure MAPE by (0.08%)
+    - Automate the procedure of optimisting the BIC for selecting the length of the (AR, MA, SAR, SMA) terms in the SARIMAX model; whereby, X = holiday_dummy variable
+    - Note: the walk-forward procedure only beat the static SARIMAX procedure MAPE by (0.08%)
 - TBATS forecast (~ 7.56% MAPE) with seasonality informed from the ACF/PACF plots
 - XGBoost - lengthy parameter tuning and refinement process to settle on the final model iteration which achieved (~2.99% MAPE)
- - Present an analysis on the significance of each feature in the XGboost mode
+  - Present an analysis on the significance of each feature in the XGboost mode
 
 
 ## PRESENT A FINAL MODEL COMPARISON AND GRAPHICAL BREAKDOWN
