@@ -1,5 +1,5 @@
-# Retail-TimeSeries-Forecasting-Methods
- A comparative breakdown of traditional econometric timeseries models vs. more modern ML methods for predicting a retail firm's (supermarket) sales over a short to medium horizon
+# Retail-TimeSeries-Forecasting-Methods In COVID (AUS)
+ A comparative breakdown of traditional econometric timeseries models vs. more modern ML methods for predicting a retail firm's (supermarket) sales over a short to medium horizon. 
 
 ## BUSINESS PROBLEM / PURPOSE OF THIS PROJECT
 - Because purchase budgets are contingent on the sales forecast (calculated as COGS benchmarks) at the end of each month for the proceding month, the sales forecasts are running 4w static forecasts. This means that the next month's sales (forecasted by week) must be forecasted in advance and cannot be iteratively updated (walk-forward predictions). This problem has been further exacerbated by COVID creating a sort of paradigm shift in supermarket trends
