@@ -5,9 +5,9 @@
 - Because purchase budgets are contingent on the sales forecast (calculated as COGS benchmarks) at the end of each month for the proceding month, the sales forecasts are running 4w static forecasts. This means that the next month's sales (forecasted by week) must be forecasted in advance and cannot be iteratively updated (walk-forward predictions). This problem has been further exacerbated by COVID creating a sort of paradigm shift in supermarket trends
 - Thus, sales (and hence, expense budgets) must be confirmed on a rolling 1M (~4W) basis
 - The overarching challenge is to create a robust 1M static forecast method, from which the relative department COGS benchmarks can be applied and purchasing budgets can be distributed in advance to stores on a rolling 1 month basis
- - overly optimistic sales forecasts result in high budgets, inventory ballooning and potentially lower bottom-line GP/NP through higher shrinkage
- - overly pessimistic forecasts could result in inventory gaps which result in less sales, and less GP/NP as a result
-
+   - overly optimistic sales forecasts result in high budgets, inventory ballooning and potentially lower bottom-line GP/NP through higher shrinkage
+   - overly pessimistic forecasts could result in inventory gaps which result in less sales, and less GP/NP as a result
+ 
 
 ## THE DATA 
 - Roughly 3Y of daily sales data (from 2019:2021) 
@@ -19,7 +19,7 @@
  - Create dummy variables to mark public holidays (automatically achieved by use of a package called "holidays" and specialised to the QLD region
 Acknowledge the impact of COVID occuring half-way through the sample. Statistically determine the data's breakpoint (noted by a drastic change in trend to reflect customer's new shopping habits)- use this knowledge to further restrict the time horizon of the sample to maintain representativeness
  - Add additional time series features in the XGboost section, including: day of the week, week of the year
-  - Also experiment with a "days since last public holiday" and "days until" time series feature, but it was ultimately found to be insignificant.
+    - Also experimented with a "days since last public holiday" and "days until" time series feature, but it was ultimately found to be insignificant.
 -Split the now restricted post structural break data into test-train split to match the business problem (4W static forecast)
 - Initial Data Exploration:
  -View some time series characteristics of the data which can help inform the SARIMAX / TBATS models
